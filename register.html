@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="myStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Fashion Pet</title>
+</head>
+<body>
+<header class="site-in">
+    <h1 class="fashion-pet">Fashion Pet</h1>
+    <img class="header-img" src="header-img.png" alt="">
+    <div class="menu">
+        
+      <nav>
+
+        <a href="index.html">Home</a>
+        <a href="#">About</a>
+        
+      </nav>
+    </div>
+
+</header>
+<main class="main-re">
+    <div class="reg-form">
+    <div class="form">
+<form action="#">
+<p>Name:<br> <input type="text" id="name" class="name" placeholder=" pet's name"></p>
+<p>Age:<br> <input type="text" class="age" id="age" placeholder=" pet's age"></p>
+<p>Type:<br> <input type="text" class="type" id="type" placeholder=" pet's type"></p>
+<p>Gender:<br> <input type="text" class="gender" id="gender" placeholder=" pet's gender"></p>
+<p>Breed:<br> <input type="text" class="breed" id="breed" placeholder=" pet's breed"></p>
+<p>Service:<br> <select class="service" id="service">
+    <option value="" disabled selected>--------Select a Service-------</option>
+    <option value="shower">Shower</option>
+    <option value="nail Clipping">Nale Clipping</option>
+    <option value="hair cut">Hair Cut</option>
+    <option value="full Service">Full Service</option>
+</select></p>
+<p>Owner Name:<br> <input type="text" class="ownerName" id="ownerName" placeholder=" owner of the pet"></p>
+<p>Contact Phone:<br> <input type="text" class="contactphone" id="contactPhone" placeholder=" owner phone number"></p>
+<br>
+
+</form>
+<button class="register" id="register" onclick="register();">Register</button>
+</div>
+<div class="form-img">
+    <img src="cat.jpg" alt="">
+    <img src="dog2.jpg" alt="">
+    <img src="hamster.jpg" alt="">
+    <img src="pets.jpg" alt="">
+
+</div>
+</div>
+
+<div class="list">
+<h3 class="registeredPets">Registered Pets</h3>
+
+<div class="search">
+    <input type="text" class="search" id="search">
+    <button onclick="search();">Search</button>
+    <div id="notfound"></div>
+</div>
+
+<div class="petList" >
+<table class="table">
+<thead class="thead-dark">
+    <th>Name</th>
+    <th>Age</th>
+    <th>Type</th>
+    <th>Gender</th>
+    <th>Breed</th>
+    <th>Service</th>
+    <th>Owner name</th>
+    <th>Contact Phone</th>
+    <th>Action</th>
+</thead>
+<tbody id="petList">
+
+
+
+</tbody>
+</table>
+
+</div>
+</div>
+
+
+
+
+</main>
+<footer class="footer-in">
+    <div class="menu-footer">
+        <nav>
+
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+        
+          </nav>
+    </div>
+    <div id="info"></div>
+</footer>
+    <script src="Script.js"></script>
+</body>
+</html>
